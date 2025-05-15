@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod_samples/Item.dart';
-import 'package:flutter_riverpod_samples/simple_provider_screen.dart';
-import 'package:flutter_riverpod_samples/state_provider_screen.dart';
+import 'package:flutter_riverpod_samples/screens/simple_provider_screen.dart';
+import 'package:flutter_riverpod_samples/screens/state_provider_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -10,7 +10,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final List<Item> items = [
     Item(id: 1, name: "Simple provider"),
-    Item(id: 2, name: "State provider"),
+    Item(id: 2, name: "State provider (Counter App)"),
     Item(id: 3, name: "Future provider"),
     Item(id: 4, name: "Streams provider"),
     Item(id: 5, name: "State notifier provider"),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:flutter_riverpod_samples/home_screen.dart';
+import 'package:flutter_riverpod_samples/screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,12 +20,21 @@ class MyApp extends StatelessWidget {
           appBarTheme: AppBarTheme(
             backgroundColor: Colors.deepPurpleAccent,
             foregroundColor: Colors.white,
-            titleTextStyle: TextStyle(fontWeight: FontWeight.w500, fontSize: 21)
-          )
+            titleTextStyle: TextStyle(
+              fontWeight: FontWeight.w500,
+              fontSize: 21,
+            ),
+          ),
+          elevatedButtonTheme: ElevatedButtonThemeData(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Colors.deepPurpleAccent,
+              foregroundColor: Colors.white,
+              textStyle: TextStyle(fontWeight: FontWeight.bold),
+            ),
+          ),
         ),
         home: const HomeScreen(),
       ),
     );
   }
 }
-
