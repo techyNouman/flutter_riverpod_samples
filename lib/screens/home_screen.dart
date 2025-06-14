@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod_samples/models/item.dart';
 import 'package:flutter_riverpod_samples/screens/favourite_screen.dart';
+import 'package:flutter_riverpod_samples/screens/future_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/notifier_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/simple_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/state_provider_screen.dart';
@@ -17,8 +18,9 @@ class HomeScreen extends StatelessWidget {
       Item(id: 3, name: "State notifier provider"),
       Item(id: 4, name: "Todo App"),
       Item(id: 5, name: "Favourite App"),
-      Item(id: 6, name: "Streams provider"),
-      Item(id: 6, name: "Auto dispose provider"),
+      Item(id: 6, name: "Future provider"),
+      Item(id: 7, name: "Streams provider"),
+      Item(id: 8, name: "Auto dispose provider"),
       Item(id: 7, name: "Provider scope"),
     ];
 
@@ -73,6 +75,12 @@ class HomeScreen extends StatelessWidget {
                   );
                   break;
                 case 6:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => FutureProviderScreen(),
+                    ),
+                  );
                   break;
                 case 7:
                   break;
