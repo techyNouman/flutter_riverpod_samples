@@ -5,6 +5,7 @@ import 'package:flutter_riverpod_samples/screens/future_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/notifier_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/simple_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/state_provider_screen.dart';
+import 'package:flutter_riverpod_samples/screens/stream_provider_screen.dart';
 import 'package:flutter_riverpod_samples/screens/todo_screen.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -83,6 +84,12 @@ class HomeScreen extends StatelessWidget {
                   );
                   break;
                 case 7:
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => StreamProviderScreen(),
+                    ),
+                  );
                   break;
                 default:
                   Navigator.pop(context);
